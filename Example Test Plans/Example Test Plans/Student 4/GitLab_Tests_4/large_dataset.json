@@ -1,0 +1,25 @@
+{
+    "devices": [
+      {"id": 1, "name": "Smart Thermostat", "category": "Thermostat", "connection": "Wi-Fi"},
+      {"id": 2, "name": "Smart Speaker", "category": "Audio", "connection": "Wi-Fi"},
+      {"id": 3, "name": "Security Camera", "category": "Security", "connection": "Wired"},
+      {"id": 4, "name": "Smart Lighting", "category": "Lights", "connection": "Wi-Fi"},
+      {"id": 5, "name": "Smart TV", "category": "Entertainment", "connection": "Wi-Fi"},
+      {"id": 6, "name": "Smart Lock", "category": "Security", "connection": "Wi-Fi"},
+      {"id": 7, "name": "Smart Refrigerator", "category": "Appliance", "connection": "Wi-Fi"},
+      {"id": 8, "name": "Smart Coffee Maker", "category": "Appliance", "connection": "Wi-Fi"},
+      {"id": 9, "name": "Smart Doorbell", "category": "Security", "connection": "Wi-Fi"},
+      {"id": 10, "name": "Smart Vacuum Cleaner", "category": "Cleaning", "connection": "Wi-Fi"},
+      {"id": 11, "name": "Smart Oven", "category": "Appliance", "connection": "Wi-Fi"},
+      {"id": 12, "name": "Smart Washing Machine", "category": "Appliance", "connection": "Wi-Fi"},
+      {"id": 13, "name": "Smart Microwave", "category": "Appliance", "connection": "Wi-Fi"},
+      {"id": 14, "name": "Smart Garage Door Opener", "category": "Security", "connection": "Wi-Fi"},
+      {"id": 15, "name": "Smart Sprinkler System", "category": "Gardening", "connection": "Wi-Fi"},
+      {"id": 16, "name": "Smart Pet Feeder", "category": "Pet Care", "connection": "Wi-Fi"},
+      {"id": 17, "name": "Smart Air Purifier", "category": "Health", "connection": "Wi-Fi"},
+      {"id": 18, "name": "Smart Scale", "category": "Health", "connection": "Wi-Fi"},
+      {"id": 19, "name": "Smart Mirror", "category": "Home Decor", "connection": "Wi-Fi"},
+      {"id": 20, "name": "Smart Ceiling Fan", "category": "Home Improvement", "connection": "Wi-Fi"}
+    ]
+  }
+  

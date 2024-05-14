@@ -1,0 +1,252 @@
+\documentclass{scrreprt}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage{graphicx}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{xcolor, soul, colortbl}
+\usepackage{enumitem}
+\hypersetup{
+    pdftitle={Development Planning Document},    
+    colorlinks=true,      
+    linkcolor=black,       
+    citecolor=black,       
+    filecolor=black,        
+    urlcolor=black           
+}
+\def\myversion{1.0 }
+\date{}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+%
+% IMPORTANT NOTE. Any comments that are prefixed by a single percent sign (i.e. %) have been 
+% written by your lecturers. Any comments that are prefixed by two percent signs (i.e. %%) 
+% contain snippets copied and pasted from the Overleaf documentation. These comments also 
+% include the URL for these articles so that you can learn more about each LaTeX feature. 
+%
+
+% Starting the document
+\begin{document}
+
+% Creating the title page
+\begin{flushright}
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+        \Huge{DEVELOPMENT PLANNING \\DOCUMENT}\\
+        \vspace{1.5cm}
+        for\\
+        \vspace{1.5cm}
+        Encost Smart Graph Project\\
+        \vspace{1.5cm}
+        \LARGE{Version \myversion}\\
+        \vspace{1.5cm}
+        Prepared by: \hl{Student Name}\\
+        SoftFlux Engineer \\
+        \vspace{1.5cm}
+        SoftFlux \\
+        \vspace{1.5cm}
+        \today\\
+    \end{bfseries}
+\end{flushright}
+
+%% In a LATEX document the table of contents can be automatically generated, and modified to fit a specific style, this article explains how: https://www.overleaf.com/learn/latex/Table_of_contents
+\tableofcontents
+
+%% Sometimes it is necessary to have more control over the layout of the document; and for this reason this article explains how to insert line breaks, page breaks and arbitrary blank spaces. https://www.overleaf.com/learn/latex/Line_breaks_and_blank_spaces
+\newpage
+
+%% Documents usually have some form of “logical structure”: division into chapters, sections, sub-sections etc. https://www.overleaf.com/learn/latex/Sections_and_chapters
+% Side note: the asterisk here tells LaTeX not to give this chapter a number, and to exclude it from the table of contents
+\chapter*{Revision History}
+
+%% This article explains how to use LaTeX to create and customize tables: changing size/spacing, combining cells, applying colour to rows or cells, and so forth. https://www.overleaf.com/learn/latex/Tables
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{0.25\linewidth}
+                |p{0.1\linewidth}
+                |p{0.45\linewidth}
+                |p{0.1\linewidth}|}
+    \hline
+    Name & Date & Reason for Changes & Version \\
+    \hline
+         &      &                    &         \\
+    \hline
+         &      &                    &         \\
+    \hline
+         &      &                    &         \\
+    \hline
+        &      &                    &         \\
+    \hline
+        &      &                    &         \\
+    \hline
+\end{tabular}
+\end{table}
+
+% Starting the main body of the document
+% I usually use three lines of empty comments to denote Chapters, two lines of empty comments to denote sections, and one line of empty comments to denote subsections -- this helps to break up the document and make it easier to parse. This is a personal preference so you may love it and keep it, or hate it and remove it. Regardless, your document should be clean, tidy, consistent, and easy to read.  
+
+
+% 
+% 
+%
+\chapter{Introduction/Purpose}
+
+% 
+% 
+\section{Purpose}
+
+What is the purpose of this document? Take a look at the SRS, SDS \& testing documents as a guideline.
+
+% 
+% 
+\section{Document Conventions}
+
+Are any conventions, acronyms, specialised terms, etc. used in this document? If so, list them here, along with their meaning. Take a look at the SRS, SDS \& testing documents as a guideline.
+
+% 
+% 
+\section{Intended Audience and Reading Suggestions}
+
+Who is the intended audience for this document? Take a look at the SRS, SDS \& testing documents as a guideline.
+
+% 
+% 
+\section{Project Scope}
+
+What is the scope of the project? Take a look at the SRS, SDS \& testing documents as a guideline. 
+
+
+% 
+% 
+% 
+\chapter{Specialized Requirements Specification}
+
+Have you found any ambiguities, missing detail, missing features, etc. in the existing documents? Have you discussed them with your client (your lecturers) and received confirmation/clarification? If so, this information should go here. 
+
+
+% 
+% 
+% 
+\chapter{Product Backlog}
+
+Write a Product Backlog that covers all \textit{High Priority} functional requirements in the SRS, based on the design laid out in the SDS, and the tests laid out in the Functional Test Plan.
+
+
+
+% 
+% 
+% 
+\chapter{Sprint Details}
+
+State the length of your time-boxed sprints. 
+
+% 
+% 
+\section{Sprint \#1 $<$Date to Date$>$}
+
+% 
+\subsection{Product Backlog Items}
+List the product backlog items that will be included in this sprint
+
+% 
+\subsection{Sprint Tasks}
+Break the backlog items down into achievable software development tasks (and list them). Include any tasks that have been rolled over from the last sprint.
+
+% 
+\subsection{Software Design}
+Include any design decisions/diagrams/tables etc. that were included as part of this sprint (if any).
+
+% 
+\subsection{Software Testing}
+Include proof of tests being passed and/or failed in this sprint (if any).
+
+% 
+\subsection{Sprint Task Completion}
+Show the status of each task at the end of the sprint. For each task, was it completed, in progress, or not started? Are any tasks being rolled over into the next sprint?
+
+% 
+% 
+\section{Sprint \#2 $<$Date to Date$>$}
+
+% 
+\subsection{Product Backlog Items}
+List the product backlog items that will be included in this sprint
+
+% 
+\subsection{Sprint Tasks}
+Break the backlog items down into achievable software development tasks (and list them). Include any tasks that have been rolled over from the last sprint.
+
+% 
+\subsection{Software Design}
+Include any design decisions/diagrams/tables etc. that were included as part of this sprint (if any).
+
+% 
+\subsection{Software Testing}
+Include proof of tests being passed and/or failed in this sprint (if any).
+
+% 
+\subsection{Sprint Task Completion}
+Show the status of each task at the end of the sprint. For each task, was it completed, in progress, or not started? Are any tasks being rolled over into the next sprint?
+
+% 
+% 
+\section{Sprint \#3 $<$Date to Date$>$}
+
+% 
+\subsection{Product Backlog Items}
+List the product backlog items that will be included in this sprint
+
+% 
+\subsection{Sprint Tasks}
+Break the backlog items down into achievable software development tasks (and list them). Include any tasks that have been rolled over from the last sprint.
+
+% 
+\subsection{Software Design}
+Include any design decisions/diagrams/tables etc. that were included as part of this sprint (if any).
+
+% 
+\subsection{Software Testing}
+Include proof of tests being passed and/or failed in this sprint (if any).
+
+% 
+\subsection{Sprint Task Completion}
+Show the status of each task at the end of the sprint. For each task, was it completed, in progress, or not started? Are any tasks being rolled over into the next sprint?
+
+% 
+% 
+\section{Sprint \#n $<$Date to Date$>$}
+
+% 
+\subsection{Product Backlog Items}
+List the product backlog items that will be included in this sprint
+
+% 
+\subsection{Sprint Tasks}
+Break the backlog items down into achievable software development tasks (and list them). Include any tasks that have been rolled over from the last sprint.
+
+% 
+\subsection{Software Design}
+Include any design decisions/diagrams/tables etc. that were included as part of this sprint (if any).
+
+% 
+\subsection{Software Testing}
+Include proof of tests being passed and/or failed in this sprint (if any).
+
+% 
+\subsection{Sprint Task Completion}
+Show the status of each task at the end of the sprint. For each task, was it completed, in progress, or not started? Are any tasks being rolled over into the next sprint?
+
+
+% 
+% 
+% 
+\chapter{Conclusion}
+
+Give a brief written summary of your system. This is a good time to go back through your documents, checking off both the functional and non-functional requirements as you go, to make sure you haven't missed anything. 
+
+
+\end{document}
