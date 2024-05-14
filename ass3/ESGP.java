@@ -26,13 +26,36 @@ public class ESGP {
                     System.out.println("Login successful! Welcome, " + username + "!");
                     //Encost User features
                     displayEncostUserFeatures();
+                    int encostFeatureChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    if(encostFeatureChoice == 1)
+                    {
+                        //load custom dataset
+                        System.out.println("Load in the custom dataset");
+                    }
+                    else if (encostFeatureChoice == 2) {
+                        //Visualise graph
+                        System.out.println("Display graph");
+                    }
+                    else if (encostFeatureChoice == 3) {
+                        //View summary statistics
+                        System.out.println("Display Summary Statistics");
+                    }
+                    else if (encostFeatureChoice == 4) {
+                        // Go back to previous menu
+                    }
+                    else if (encostFeatureChoice == 5) {
+                        //exit
+                        System.out.println("Exiting ESGP.");
+                        System.exit(0);
+                    } else {
+                        System.out.println("Invalid choice.");
+                    }
                 } else {
                     System.out.println("Incorrect username or password. Please try again");
-                    // Provide retry option
                 }
             } else if (encostUserChoice == 2) {
                 // Go back to previous menu
-                
             } else if (encostUserChoice == 3) {
                 System.out.println("Exiting ESGP.");
                 System.exit(0);
